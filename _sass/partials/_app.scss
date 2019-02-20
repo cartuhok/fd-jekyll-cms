@@ -8,12 +8,7 @@
 // the body element is our primary layout grid
 body {
   
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns:
-    [full-start] minmax(0rem, 1fr)
-    [main-start] minmax(0, 100rem) [main-end]
-    minmax(1fr) [full-end];
+ 
 }
 
 // by default, make any new children of body to span the full track
@@ -27,8 +22,11 @@ body > * {
 header {
   grid-column: full;
   display: grid;
-  background-image: linear-gradient(-90deg, #e3fdfd, #71c9ce);
-  padding: 2rem;
+  background-color: #fff;
+  padding: 3rem;
+  position: fixed;
+  width: 100vw;
+  height: 79px;
   @media screen and (min-width: $screen-sm-min) {
     grid-template-columns: 1fr auto;
     grid-column-gap: 1rem;
@@ -39,6 +37,7 @@ header {
 header > h1 {
   display: inline-block;
   padding-bottom: 1rem;
+  font-weight: 800;
   @media screen and (min-width: $screen-sm-min) {
     padding-bottom: 0;
   }
@@ -67,6 +66,7 @@ header > nav {
     li {
       margin-right: 2rem;
       display: inline-block;
+      font-size: 18px;
       @media screen and (min-width: $screen-sm-min) {
         margin-right: 0;
       }
@@ -104,7 +104,14 @@ main {
     align-content: start;
   }
 }
-
+.intro {
+  width: 600px;
+}
+.topBox {
+  background-image: url(/assets/img/uploads/blob-shape.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
 // reset breaking fallbacks (e.g. widths) if CSS Grid is supported
 // float, inline-block, table properties are already ignored by CSS Grid
 @supports (display: grid) {
@@ -112,6 +119,12 @@ main {
     width: auto;
     max-width: none;
   }
+}
+
+.sideBox {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 1;
 }
 
 // blog posts list
