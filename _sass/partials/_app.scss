@@ -106,12 +106,27 @@ main {
 }
 .intro {
   width: 600px;
+  margin-left: 40px;
 }
 .topBox {
   background-image: url(/assets/img/uploads/blob-shape.svg);
   background-repeat: no-repeat;
   background-position: right;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+
+  h2 {
+    margin-left: 40px;
+  }
 }
+
+.wireframe {
+  height: 300px;
+  width: 400px;
+  position: relative;
+}
+
 // reset breaking fallbacks (e.g. widths) if CSS Grid is supported
 // float, inline-block, table properties are already ignored by CSS Grid
 @supports (display: grid) {
