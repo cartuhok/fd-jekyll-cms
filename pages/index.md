@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Hi There.
+title: Digital Done Right.
 permalink: /
 section: home
 intro_paragraph: >
