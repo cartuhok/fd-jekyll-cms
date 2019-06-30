@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Digital Done Right.
+title: Make Digital a Piece of Cake.
 permalink: /
 section: home
 intro_paragraph: >-

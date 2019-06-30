@@ -16,6 +16,12 @@ header, nav {
   width: 100%;
 }
 
+.icon {
+  height: 40px;
+  width: 40px;
+  margin: 1em 1em 0em 6em;
+}
+
 header a {
   text-decoration: none;
 }
@@ -37,28 +43,28 @@ nav ul li {
 .heroWrapper {
   display: grid;
   grid-template-columns: [side1] 1fr [side2] 1fr;
+  background-color: mediumslateblue;
+  height: 80vh;
 }
 
 
 .introText {
-  grid-column: side1;
+  grid-column:  side1;
+  padding: 4em 0em 0em 5em;
+  color: azure;
 }
 
 .heroImg {
-  padding-top: 60px;
   grid-column: side2;
-  justify-self: center;
-  overflow: hidden;
-  width: 100%;
-  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2em 0em 0em 3em;
 }
 
 .heroImg img {
-  height: 400px;
-  width: 300px;
-  position: absolute;
-  display: inline-block;
-
+  height: 500px;
+  width: 650px;
+  max-width: 100%;
 }
 
 .introText h2 {
@@ -72,33 +78,230 @@ nav ul li {
   padding: 0em 1em 0em 1em;
 }
 
-.phone {
+
+
+.bg {
   position: absolute;
-  display: inline-block;
-  margin: 0px 400px 0px 100px;
 }
 
-.blob1 {
-  height: 600px;
-  position: absolute;
-  z-index: -1;
-  padding: 0px 180px 0px 6px;
-}
-.blob2 {
-  height: 600px;
-  position: absolute;
-  z-index: -2;
-
-}
-
-.blob3 {
-  height: 1200px;
-  width: 100%;
-  max-width: 100%;
+.wrapper {
   position: relative;
-  z-index: -3;
-  margin: -400px 1600px 0px 0px;
-  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  width: 800px;
 }
 
+.box {
+  position: relative;
+  width: 539px;
+  height: 383.5px;
+  border: 1px solid rgb(212, 196, 196);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  margin-top: 50px;
+  background-color: white;
+  margin: 30px;
+}
+.burger {
+  position: relative;
+  padding-bottom: 15px;
+}
+.ham1,
+.ham2,
+.ham3 {
+  width: 30px;
+  height: 3px;
+  background-color: #cd5454;
+  margin: 3px 0;
+}
 
+.text {
+  grid-column: span 1;
+  grid-row: span 3;
+  justify-content: center;
+  margin-top: 40px;
+  margin-left: 60px;
+}
+.text h1 {
+  font-size: 42px;
+  line-height: 0.5;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.text p {
+  line-height: 1.2;
+  padding-bottom: 1rem;
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.button {
+  padding: 8px 24px;
+  border: none;
+  border-radius: 2px;
+  background: #cd5454;
+  font-size: 12px;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+}
+
+.colors {
+  margin-left: 8px;
+  width: 380px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.line {
+  height: 6px;
+  width: 420px;
+  background-image: linear-gradient(
+    to right,
+    #cd5454 0%,
+    #cd5454 33%,
+    #f1b9b9 33%,
+    #f1b9b9 66%,
+    #fadfdf 66%,
+    #fadfdf 100%
+  );
+  margin: -12px 12px;
+}
+
+.rectangle {
+  border-radius: 10px;
+  height: 50px;
+  width: 100px;
+  background-color: #555;
+  margin: 10px;
+  box-shadow: 3px 3px 5px grey;
+}
+
+.red {
+  background-color: #cd5454;
+}
+.orange {
+  background-color: #f68e65;
+}
+.blue {
+  background-color: #494ca2;
+}
+.yellow {
+  background-color: #ffed61;
+}
+.green {
+  background-color: #488b8f;
+}
+.purple {
+  background-color: #714288;
+}
+.pink {
+  background-color: #f67280;
+}
+
+@media only screen and (max-width: 767px) {
+  .wrapper {
+    width: 375px;
+  }
+  .box {
+    width: 374px;
+    height: 199.8px;
+  }
+  .bg {
+    width: 345px;
+    height: 200px;
+  }
+  .colors {
+    width: 375px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+  }
+  .line {
+    max-width: 308px;
+    margin-bottom: 10px;
+    height: 4px;
+  }
+  .yes {
+    display: none;
+  }
+  .yellow {
+    display: none;
+  }
+  .burger {
+    position: relative;
+    padding-bottom: 5px;
+  }
+  .text {
+    grid-column: span 1;
+    grid-row: span 1;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+  .text h1 {
+    font-size: 28px;
+    line-height: 0.5;
+  }
+  .text p {
+    font-size: 10px;
+    padding-bottom: 5px;
+  }
+  .ham1,
+  .ham2,
+  .ham3 {
+    width: 24px;
+    height: 2.5px;
+    background-color: #cd5454;
+    margin: 2.5px 0;
+  }
+  .button {
+    padding: 4px 12px;
+    border: none;
+    border-radius: 2px;
+    background: #cd5454;
+    font-size: 9px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .rectangle {
+    border-radius: 6px;
+    height: 36px;
+    width: 86px;
+    margin: 6px;
+    box-shadow: 3px 3px 5px grey;
+  }
+}
+
+.design {
+  display: grid;
+  grid-template-columns: [someText] 1fr [colorPicker] 1fr;
+  background-color: mistyrose;
+}
+
+.colorPickerText {
+  grid-column: colorPicker;
+  h1 {
+    font-size: 48px;
+    padding: 3em 3em 0em 0em;
+  }
+  h4 {
+    padding: 1em 3em 0em 0em;
+  }
+}
+
+.colorPicker {
+  grid-column: someText;
+  padding: 0em 0em 0em 3em;
+}
+
+.wrapper {
+  height: 600px;
+  width: 600px;
+}
