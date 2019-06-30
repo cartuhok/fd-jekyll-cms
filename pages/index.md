@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Make Digital a Piece of Cake.
+title: Make Your Digital Strategy a Piece of Cake.
 permalink: /
 section: home
 intro_paragraph: >-
@@ -9,6 +9,5 @@ intro_paragraph: >-
   provides the basics to get a fast, static website deployed on Netlify.
   Features [Netlify CMS](https://www.netlifycms.org), responsive CSS Grid
   layout, sample pages and posts, and a continuous deployment workflow.
-
 ---
 
