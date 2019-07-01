@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Make Your Digital Strategy a Piece of Cake.
+title: Make Digital a Piece of Cake.
 permalink: /
 section: home
 intro_paragraph: >-
