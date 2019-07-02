@@ -58,12 +58,13 @@ nav ul li {
   grid-column: side2;
   display: flex;
   justify-content: center;
-  padding: 2em 0em 0em 3em;
+  align-items: center;
+  
 }
 
 .heroImg img {
-  height: 500px;
-  width: 650px;
+  height: 300px;
+  width: 318px;
   max-width: 100%;
 }
 
@@ -309,7 +310,7 @@ nav ul li {
 .waves {
   height: 200px;
   width: 100vw;
-  background-image: url('/assets/img/uploads/Vector(1).png');
-  background-repeat: no-repeat;
-  background-size: cover;
+  img {
+    image-rendering: auto;
+  }
 }
