@@ -43,8 +43,8 @@ nav ul li {
 .heroWrapper {
   display: grid;
   grid-template-columns: [side1] 1fr [side2] 1fr;
-  background-color: mediumslateblue;
-  height: 80vh;
+  background-color: #044E54;
+  height: 60vh;
 }
 
 
@@ -282,7 +282,7 @@ nav ul li {
 .design {
   display: grid;
   grid-template-columns: [someText] 1fr [colorPicker] 1fr;
-  background-color: mistyrose;
+
 }
 
 .colorPickerText {
@@ -304,4 +304,12 @@ nav ul li {
 .wrapper {
   height: 600px;
   width: 600px;
+}
+
+.waves {
+  height: 200px;
+  width: 100vw;
+  background-image: url('/assets/img/uploads/Vector(1).png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
