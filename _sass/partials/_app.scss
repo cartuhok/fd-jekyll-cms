@@ -51,6 +51,11 @@ nav ul li {
   height: 60vh;
 }
 
+.new {
+  background-color: #240754;
+  height: 40em;
+  margin-top: -10px;
+}
 
 .introText {
   grid-column:  side1;
@@ -80,8 +85,13 @@ nav ul li {
 
 }
 
+#text {
+  color: azure;
+}
+
 .intro {
   padding: 0em 1em 0em 1em;
+
 }
 
 .waves {
@@ -170,6 +180,8 @@ nav ul li {
 .des2txt {
   grid-column: someText;
   color: azure;
+  align-self: center;
+  padding: 0.8em 6em 0em 6em;
   h1 {
     font-size: 3.2rem;
   }
@@ -182,11 +194,103 @@ nav ul li {
   }
 }
 
+.pricing {
+  display: flex;
+  height: 20em;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0em 6em 0em 6em;
+}
+
+.pcard_1, .pcard_2, .pcard_3, .pcard_4  {
+  border: 8px solid #D9E2EC;
+  border-radius: 10%;
+  height: 300px;
+  width: 300px;
+  h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+  .pcardHeader, .pcardHeader2, .pcardHeader3, .pcardHeader4 {
+    height: 80px;
+    border-bottom: 4px solid #D9E2EC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .pcardHeaderBtn, .pcardHeaderBtn2, .pcardHeaderBtn3, .pcardHeaderBtn4  { 
+    width: 100px;
+    height: 10px;
+    
+    border-radius: 40px; 
+  }
+  .pcardHeaderBtn {
+    background-color:  #CFBCF2;
+  }
+  .pcardHeaderBtn2 {
+    background-color:  #8662C7;
+  }
+  .pcardHeaderBtn3 {
+    background-color:  #653CAD;
+  }
+  .pcardHeaderBtn4 {
+    background-color: #421987;
+  }
+  .pcardBody, .pcardBody2, .pcardBody3, .pcardBody4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pcardTxtLine, .pcardTxtLine2, .pcardTxtLine3, .pcardTxtLine4 {
+    width: 200px;
+    height: 10px;
+    background: #a84909;
+    border-radius: 40px; 
+  }
+  .pcardTxtLine {
+    background-color:  #CFBCF2;
+  }
+  .pcardTxtLine2 {
+    background-color: #8662C7;
+  }
+  .pcardTxtLine3 {
+    background-color: #653CAD;
+  }
+  .pcardTxtLine4 {
+    background-color: #421987;
+  }
+  .pcardButton, .pcardButton2, .pcardButton3, .pcardButton4 {
+    margin-top: 1.5em;
+    background: #3498db;
+    border-radius: 2px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 5px 15px 5px 15px;
+    text-decoration: none;
+  }
+  .pcardButton {
+    background: #CFBCF2;
+  }
+  .pcardButton2 {
+    background: #8662C7;
+  }
+  .pcardButton3 {
+    background: #653CAD;
+  }
+  .pcardButton4 {
+    background: #421987;
+  }
+  
+}
 
 
 
 
-
+/*SVG */
   .bg {
     position: absolute;
   }
