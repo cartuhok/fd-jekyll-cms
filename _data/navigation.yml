@@ -7,5 +7,5 @@
   url: /blog
 - text: Pricing
   url: /
-- text: Contact
-  url: /contact
+# - text: Contact
+#  url: /contact

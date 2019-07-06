@@ -80,12 +80,14 @@ a:visited {
 	color: $link-color;
 }
 
+/*
 a:hover,
 a:active {
   text-decoration: none;
   border: 0;
   color: $link-hover-color;
 }
+*/
 
 header > h1 {
   line-height: $base-line-height;
