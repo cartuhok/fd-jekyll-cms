@@ -174,7 +174,7 @@ a.navLinks {
 
 
 
-.design, .design2 {
+.design, .design2, .design3 {
   display: grid;
   grid-template-columns: [someText] 1fr [colorPicker] 1fr;
   justify-items: center;
@@ -185,12 +185,14 @@ a.navLinks {
   padding: 0em 8em 0em 0em;
 }
 
-.design2 {
+.design2, .design3 {
   background-color: #240754;
   padding: 0px 0px 0px 0px;
   margin-top: -2px;
 }
-
+.design3 {
+  
+}
 
 .colorPickerText {
   grid-column: colorPicker;
@@ -220,9 +222,15 @@ a.navLinks {
     height: 600px;
     width: 400px;
   }
+  svg {
+    fill: azure;
+    height: 300px;
+    width: 300px;
+  }
 }
 
 .pricing {
+ 
   display: flex;
   height: 20em;
   flex-direction: row;
