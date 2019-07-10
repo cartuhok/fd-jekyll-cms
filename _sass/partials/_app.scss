@@ -47,7 +47,7 @@ nav ul li {
 a.navLinks {
   text-decoration: none;
   font-weight: 600;
-  color: #240754;
+  color: #002159;
 }
 .navContact {
   font-weight: 600;
@@ -57,7 +57,7 @@ a.navLinks {
   font-family: Arial;
   color: azure;
   font-size: 20px;
-  background: #8662C7;
+  background: #05606e;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
 }
@@ -68,13 +68,13 @@ a.navLinks {
 .heroWrapper {
   display: grid;
   grid-template-columns: [side1] 1fr [side2] 1fr;
-  background-color: #240754;
+  background-color: #002159;
   height: 60vh;
 }
 
 
 .new {
-  background-color: #240754;
+  background-color: #002159;
   height: 40em;
   margin-top: -10px;
 }
@@ -98,16 +98,14 @@ a.navLinks {
 }
 
 .heroImg img {
-  height: 250px;
-  width: 250px;
+  height: 200px;
+  width: 200px;
   max-width: 100%;
 }
 
 .introText h2 {
   padding: 1.3em 1em .5em .5em;
   margin: 0;
-
-
 }
 
 #text {
@@ -137,6 +135,7 @@ a.navLinks {
     display: block;
     animation: wave 4s infinite;
   overflow: hidden;
+  fill: #19216C;
   }
 }
 
@@ -186,7 +185,7 @@ a.navLinks {
 }
 
 .design2, .design3 {
-  background-color: #240754;
+  background-color: #002159;
   padding: 0px 0px 0px 0px;
   margin-top: -2px;
 }
