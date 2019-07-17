@@ -66,6 +66,7 @@
     }
     .two {
         height: 210vh;
+        display: flex;
     }
     .three {
         height: 210vh;
@@ -77,6 +78,30 @@
         height: 210vh;
     }
     
+    #square {
+ animation:  deviceMorph 8s ease infinite;
+ border: 2px solid black;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+@keyframes deviceMorph {
+  0% { width: 340px; height: 200px; }
+  33% { width: 80px; height: 190px; }
+  66% { width: 255px; height: 126px; }
+  100% { width: 340px; height: 200px; }
+}
+
+.s2txt {
+    width: 50vw;
+}
+
+.square {
+    justify-self: center;
+}
+
+
     </style>
 <nav><img width="50" height="50" class="cakeLogo" src="/assets/img/uploads/GroupCake(8).png"/></nav>
 <div class="wrapper2">
@@ -89,8 +114,16 @@
           </div>
         </div>
         <div class="section two" data-background-color="#c8e4d6">
+
+        <div class="s2txt">
           <h1 class="title">Creative</h1>
           <h4 class="subText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex praesentium vitae, rem laborum quod perferendis quaerat autem, quae dolorem blanditiis veritatis laudantium? Dolores, accusamus et rerum molestias fugiat voluptas voluptatum.</h4>
+        </div>
+
+        <div id="square">
+            <h2>&#127856;</h2>
+        </div>
+    
         </div>
         <div class="section three" data-background-color="#dee5ff">
           <h1 class="title">Digital</h1>
