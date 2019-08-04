@@ -84,6 +84,7 @@
  display: flex;
  justify-content: center;
  align-items: center;
+ justify-self: center;
 }
 
 @keyframes deviceMorph {
@@ -141,21 +142,13 @@
 
 
       <script src="{{ "/assets/JS/in-view.js" | relative_url }}"></script>
-<script
-	src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-	integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
-    crossorigin="anonymous">
-</script>
 <script>
  
 
-  var $target = $('.wrapper2');
+const target = document.querySelector('.wrapper2');
 inView('.section').on('enter', function(el){
-    if(el === 'section one') {
-        $('.cakeLogo').style.display = 'none';
-    }
-  var color = $(el).attr('data-background-color');
-  $target.css('background-color', color );
+  let color = el.getAttribute('data-background-color');
+  target.style.backgroundColor =  color;
 });
 
 
