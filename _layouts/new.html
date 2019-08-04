@@ -9,13 +9,7 @@
 
     <style>
     
-    :root {
-        --bg-color-start: #746666;
-        --bg-color-1q: rgb(240, 195, 240);
-        --bg-color-half: rgb(150, 176, 236);
-        --bg-color-3q: rgb(129, 221, 172);
-        --bg-color-end: rgb(200, 113, 113);
-    }
+
     body {
         margin: 0;
         padding: 0;
@@ -24,11 +18,11 @@
 
     .wrapper2 {
         padding: 0em 5.5em 0em 5.5em;
-        transition: all .2s ease;
+        transition: all .9s ease;
     }
     .title {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: calc(1.14px + 7.14286vw);
+        font-size: calc(1.14px + 6.14286vw);
         width: calc(-40px + 66.6667vw);
      
     }
@@ -42,78 +36,284 @@
         position: fixed;
     }
    
-    .cakeImg2 {
-        height: calc(1.14px + 14vw);
-        width: calc(1.14px + 14vw);
-        align-self: center;
-        padding: 2em 5em 0em 0em;
-        margin-left: -2em;
-    }
     .arrow {
-        width: 100vw;
-        display: flex;
+
+    }
+    .section {
+        height: 120vh;
+    }
+    .one {
+        display: grid;
+        grid-template-columns: [left] 1fr [right] 1fr;
+        
+    }
+
+    .h1text {
+        grid-column: left;
+
+  
+    }
+    .cakeImg2 {
+        grid-column: right;
+        padding: 2em 5em 0em 0em;
+        max-width: 100%;
         justify-content: center;
         align-content: center;
+        align-self: center;
         align-items: center;
-        font-size: 3em;
     }
-
-    .one {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding-bottom: 8em;
+    .cakeImg2 img {
+        height: calc(1.14px + 14vw);
+        width: calc(1.14px + 14vw);
     }
     .two {
-        height: 210vh;
-        display: flex;
+        display: grid;
+        grid-template-columns: [left] 1fr [right] 1fr;
+  
     }
-    .three {
-        height: 210vh;
-    }
-    .four {
-        height: 210vh;
-    }
-    .five {
-        height: 210vh;
-    }
-    
-    #square {
- animation:  deviceMorph 8s ease infinite;
- border: 2px solid black;
- display: flex;
- justify-content: center;
- align-items: center;
- justify-self: center;
+
+.squareContainer {
+
 }
 
-@keyframes deviceMorph {
-  0% { width: 340px; height: 200px; }
-  33% { width: 80px; height: 190px; }
-  66% { width: 255px; height: 126px; }
-  100% { width: 340px; height: 200px; }
-}
 
 .s2txt {
-    width: 50vw;
+    grid-column: left;
+    max-width: 100%;
+    overflow: hidden;
 }
+    .three {
+    
+    }
+    .four {
+       
+    }
+    .five {
+     
+    }
+    
 
-.square {
-    justify-self: center;
-}
+
+
+
+/*SVG */
+.bg {
+    position: absolute;
+  }
+  
+  .wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+  }
+  
+  .box {
+    position: relative;
+
+    border: 1px solid rgb(212, 196, 196);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    margin-top: 50px;
+    background-color: white;
+    margin: 30px;
+  }
+  .burger {
+    position: relative;
+    padding-bottom: 15px;
+  }
+  .ham1,
+  .ham2,
+  .ham3 {
+    width: 30px;
+    height: 3px;
+    background-color: #cd5454;
+    margin: 3px 0;
+  }
+  
+  .text {
+    grid-column: span 1;
+    grid-row: span 3;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 60px;
+  }
+  .text h1 {
+    font-size: 42px;
+    line-height: 0.5;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  .text p {
+    line-height: 1.2;
+    padding-bottom: 1rem;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  .button {
+    padding: 8px 24px;
+    border: none;
+    border-radius: 2px;
+    background: #cd5454;
+    font-size: 12px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 700;
+  }
+  
+  .colors {
+    margin-left: 8px;
+    width: 380px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .line {
+    height: 6px;
+    width: 420px;
+    background-image: linear-gradient(
+      to right,
+      #cd5454 0%,
+      #cd5454 33%,
+      #f1b9b9 33%,
+      #f1b9b9 66%,
+      #fadfdf 66%,
+      #fadfdf 100%
+    );
+    margin: -12px 12px;
+  }
+  
+  .rectangle {
+    border-radius: 10px;
+    height: 50px;
+    width: 100px;
+    background-color: #555;
+    margin: 10px;
+    box-shadow: 3px 3px 5px grey;
+  }
+  
+  .red {
+    background-color: #cd5454;
+  }
+  .orange {
+    background-color: #f68e65;
+  }
+  .blue {
+    background-color: #494ca2;
+  }
+  .yellow {
+    background-color: #ffed61;
+  }
+  .green {
+    background-color: #488b8f;
+  }
+  .purple {
+    background-color: #714288;
+  }
+  .pink {
+    background-color: #f67280;
+  }
+  
+  
+    .wrapper {
+      width: 375px;
+    }
+    .box {
+      width: 374px;
+      height: 199.8px;
+    }
+    .bg {
+      width: 345px;
+      height: 200px;
+    }
+    .colors {
+      width: 375px;
+      align-items: center;
+      justify-content: center;
+      margin-right: 16px;
+    }
+    .line {
+      max-width: 308px;
+      margin-bottom: 10px;
+      height: 4px;
+    }
+    .yes {
+      display: none;
+    }
+    .yellow {
+      display: none;
+    }
+    .burger {
+      position: relative;
+      padding-bottom: 5px;
+    }
+    .text {
+      grid-column: span 1;
+      grid-row: span 1;
+      justify-content: center;
+      margin-top: 20px;
+      margin-left: 30px;
+    }
+    .text h1 {
+      font-size: 28px;
+      line-height: 0.5;
+    }
+    .text p {
+      font-size: 10px;
+      padding-bottom: 5px;
+    }
+    .ham1,
+    .ham2,
+    .ham3 {
+      width: 24px;
+      height: 2.5px;
+      background-color: #cd5454;
+      margin: 2.5px 0;
+    }
+    .button {
+      padding: 4px 12px;
+      border: none;
+      border-radius: 2px;
+      background: #cd5454;
+      font-size: 9px;
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .rectangle {
+      border-radius: 6px;
+      height: 36px;
+      width: 86px;
+      margin: 6px;
+      box-shadow: 3px 3px 5px grey;
+    }
+  
+
 
 
     </style>
 <nav><img width="50" height="50" class="cakeLogo" src="/assets/img/uploads/GroupCake(8).png"/></nav>
 <div class="wrapper2">
+
         <div class="section one" data-background-color="#fbe5cd">
+         <div class="h1text">
           <h1 class="title">Make Digital a piece of Cake.</h1>
-          <img class="cakeImg2" src="/assets/img/uploads/GroupCake(8).png"/>
           <h4 class="subText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nobis quis a facere. Quod, nostrum aliquid repudiandae voluptate ut maiores quibusdam laboriosam obcaecati, placeat, quam ipsum at nobis sunt eaque.</h4>
+          </div>
+        <div class="cakeImg2">
+          <img src="/assets/img/uploads/GroupCake(8).png"/>
+        </div>
           <div class="arrow">
             <h5>&#8609;</h5>
           </div>
         </div>
+
         <div class="section two" data-background-color="#c8e4d6">
 
         <div class="s2txt">
@@ -121,15 +321,24 @@
           <h4 class="subText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex praesentium vitae, rem laborum quod perferendis quaerat autem, quae dolorem blanditiis veritatis laudantium? Dolores, accusamus et rerum molestias fugiat voluptas voluptatum.</h4>
         </div>
 
-        <div id="square">
-            <h2>&#127856;</h2>
-        </div>
+        <div class="squareContainer">
+                <div id="square">
+                        <div class="colorPicker">
+                                {% include colorPick.html %}
+                              
+                               
+                                </div>
+                    </div>
+                </div>
+   
     
         </div>
+
         <div class="section three" data-background-color="#dee5ff">
           <h1 class="title">Digital</h1>
           <h4 class="subText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quibusdam rerum, deserunt vero eligendi corporis aperiam facere itaque dolores velit, sapiente dolorum, ut molestiae quos. Laborum delectus accusamus sunt voluptate!</h4>
         </div>
+
         <div class="section four" data-background-color="#FFDAB9">
           <h1 class="title">Marketing Analytics</h1>
           <h4 class="subText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit pariatur maiores quia culpa fugiat impedit animi, neque quidem velit vel magni ipsam, repellendus earum at architecto totam doloribus atque. Praesentium?</h4>
@@ -142,13 +351,15 @@
 
 
       <script src="{{ "/assets/JS/in-view.js" | relative_url }}"></script>
+      <script src="{{ "/assets/JS/index.js" | relative_url }}"></script>
 <script>
+    
  
 
 const target = document.querySelector('.wrapper2');
-inView('.section').on('enter', function(el){
+inView('.section').on('enter', el => {
   let color = el.getAttribute('data-background-color');
-  target.style.backgroundColor =  color;
+  target.style.backgroundColor = color;
 });
 
 
