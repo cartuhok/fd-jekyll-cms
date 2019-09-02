@@ -230,11 +230,10 @@ a.navLinks {
 }
 
 .pricing {
- 
   display: flex;
   height: 20em;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 0em 6em 0em 6em;
 }
