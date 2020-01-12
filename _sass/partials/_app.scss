@@ -7,9 +7,7 @@
 
 // the body element is our primary layout grid
 
-.Main {
-  
-}
+
 
 header {
   border-bottom: 1px solid #333;
@@ -327,8 +325,8 @@ a.navLinks {
 .des2img, .des3img {
   grid-column: colorPicker;
   img {
-    height: 600px;
-    width: 400px;
+    height: 400px;
+    width: 300px;
   }
   svg {
     fill: azure;
@@ -354,11 +352,10 @@ a.navLinks {
   }
 
 .pricing {
- 
   display: flex;
   height: 20em;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 0em 6em 0em 6em;
 }
@@ -476,6 +473,7 @@ a.navLinks {
     flex-direction: column;
     align-items: center;
   }
+
 
 
 
@@ -677,6 +675,7 @@ a.navLinks {
       margin: 6px;
       box-shadow: 3px 3px 5px grey;
     }
+
   
 
 
