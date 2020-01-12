@@ -20,10 +20,28 @@ header {
   padding: 0em 0em 0em 6em;
 }
 
+@media only screen and (max-width: 450px) {
+  header {
+    border-bottom: 1px solid #333;
+    display: flex;
+    flex-direction: row;
+    height: 3em;
+    align-items: left;
+    padding: 0em 0em 0em 0em;
+  }
+}
+
 .icon {
   height: 40px;
   width: 40px;
 
+}
+
+@media only screen and (max-width: 450px) {
+  .icon {
+   display: none;
+  
+  }
 }
 
 header a {
@@ -36,6 +54,17 @@ nav {
   justify-content: flex-end;
   align-items: flex-end;
   width: 100%;
+}
+
+@media only screen and (max-width: 450px) {
+ nav {
+  padding: 0em 0em 0em 0em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  font-size: 14px;
+ }
 }
 
 nav ul li {
@@ -57,10 +86,25 @@ a.navLinks {
   font-family: Arial;
   color: azure;
   font-size: 20px;
-  background: #05606e;
+  background: #002159;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
 }
+
+@media only screen and (max-width: 450px) {
+  .navContact {
+    font-weight: 600;
+    -webkit-border-radius: 6;
+    -moz-border-radius: 6;
+    border-radius: 6px;
+    font-family: Arial;
+    color: azure;
+    font-size: 14px;
+    background: #002159;
+    padding: 6px 16px 6px 16px;
+    text-decoration: none;
+  }
+ }
 #cntct:hover {
   text-decoration: none !important;
 }
@@ -70,6 +114,16 @@ a.navLinks {
   grid-template-columns: [side1] 1fr [side2] 1fr;
   background-color: #002159;
   height: 60vh;
+}
+@media only screen and (max-width: 450px) {
+  .heroWrapper {
+    display: grid;
+  grid-template-columns: 1fr;
+    background-color: #002159;
+    height: 60vh;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 
@@ -88,6 +142,22 @@ a.navLinks {
     margin: 0em 0em 0em 1em;
   }
 }
+@media only screen and (max-width: 450px) {
+  .introText  {
+    margin: 0em 0em 0em 0em;
+      margin: 0em 0em 0em 0em;
+    
+    h2 {
+      padding: 0em 0em 1em 0em !important;
+    }
+    h4 {
+      margin: 0;
+      padding: 0em 1em;
+    }
+  }
+
+  }
+
 
 .heroImg {
   grid-column: side2;
@@ -102,6 +172,15 @@ a.navLinks {
   width: 200px;
   max-width: 100%;
 }
+@media only screen and (max-width: 450px) {
+  .heroImg {
+    display: none;
+  }
+  .heroImg img {
+    display: none;
+  }
+}
+
 
 .introText h2 {
   padding: 1.3em 1em .5em .5em;
@@ -178,6 +257,12 @@ a.navLinks {
   grid-template-columns: [someText] 1fr [colorPicker] 1fr;
   justify-items: center;
   }
+  
+  @media only screen and (max-width: 450px) {
+    .design, .design2, .design3  {
+      grid-template-columns:  1fr;
+      }
+    }
 
 .colorPicker {
   grid-column: someText;
@@ -200,10 +285,25 @@ a.navLinks {
    font-size: 3.2rem;
   }
   h4 {
-    padding: 0.8em 4.5em 0em 0em;
+    padding: 0.8em .5em 0em 0em;
   }
-  
   }
+
+  @media only screen and (max-width: 450px) {
+    .colorPicker {
+      padding: 0em;
+    }
+    .colorPickerText {
+      grid-column: colorPicker;
+      padding: 2em 1em 0em 1em;
+      h1 {
+       font-size: 3.2rem;
+      }
+      h4 {
+        padding: 0em 1em 0em 0em;
+      }
+      }
+    }
 
 
 .des2txt {
@@ -215,6 +315,15 @@ a.navLinks {
     font-size: 3.2rem;
   }
 }
+@media only screen and (max-width: 450px) {
+  .des2txt {
+ 
+    padding: 2em 1em 2em 1em;
+    h1 {
+      font-size: 3.2rem;
+    }
+  }
+  }
 .des2img, .des3img {
   grid-column: colorPicker;
   img {
@@ -227,9 +336,22 @@ a.navLinks {
     width: 250px;
   }
 }
+@media only screen and (max-width: 450px) {
+  .des2img  {
+  display: none;
+    }
+  }
+
+  
 .des3img {
   align-self: center;
 }
+
+@media only screen and (max-width: 450px) {
+  .des3img  {
+  display: none;
+    }
+  }
 
 .pricing {
  
@@ -241,11 +363,20 @@ a.navLinks {
   padding: 0em 6em 0em 6em;
 }
 
+@media only screen and (max-width: 450px) {
+  .pricing {
+    padding: 0em 0em 0em 0em;
+    flex-direction: column;
+    height: auto;
+    }
+  }
+
 .pcard_1, .pcard_2, .pcard_3, .pcard_4  {
   border: 8px solid #D9E2EC;
   border-radius: 10%;
   height: 300px;
   width: 300px;
+  padding: 0em 0.5em 0em 0.5em;
   h1 {
     font-size: 2em;
     text-align: center;
@@ -330,6 +461,21 @@ a.navLinks {
   }
   
 }
+
+@media only screen and (max-width: 450px) {
+  .pcard_1, .pcard_2, .pcard_3, .pcard_4 {
+    margin: 0em 0em 1em 0em;
+ 
+    }
+  }
+
+
+  footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
 
 
 
@@ -490,7 +636,7 @@ a.navLinks {
     }
     .burger {
       position: relative;
-      padding-bottom: 5px;
+      padding-bottom: 20px;
     }
     .text {
       grid-column: span 1;
